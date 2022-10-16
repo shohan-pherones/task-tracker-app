@@ -14,8 +14,6 @@
   padding: 0;
   border: none;
   outline: none;
-  list-style: none;
-  text-decoration: none;
   box-sizing: border-box;
 }
 
@@ -183,6 +181,17 @@ input[type="checkbox"] {
   font-size: 2rem;
   font-weight: 500;
   padding: 2rem;
+}
+
+footer {
+  padding-top: 10rem;
+  font-size: 1.5rem;
+  text-align: center;
+  opacity: 0.5;
+}
+
+footer a {
+  color: inherit;
 }
 
 @media screen and (max-width: 768px) {

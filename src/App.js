@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [showForm, setShowForm] = useState(false);
@@ -86,6 +87,7 @@ const App = () => {
         <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />
       )}
       {tasks.length === 0 && <p className="tasks-fallback">No tasks!</p>}
+      <Footer />
     </div>
   );
 };
