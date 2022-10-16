@@ -13,7 +13,7 @@ const Button = ({ color, text, onClick }) => {
 };
 
 Button.defaultProps = {
-  color: "orangered",
+  color: "seagreen",
   text: "Click Me",
 };
 

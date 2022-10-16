@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 :root {
-  --color-primary: #ff4500;
+  --color-primary: #2e8b57;
   --color-light: #fafafa;
   --color-dark: #212121;
   --transition: all 0.3s ease-in-out;
@@ -35,7 +35,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.5px;
   line-height: 1.5;
-  background-color: var(--color-primary);
+  background-color: var(--color-light);
   color: var(--color-light);
 }
 
@@ -181,6 +181,7 @@ input[type="checkbox"] {
   text-align: center;
   font-size: 2rem;
   font-weight: 500;
+  padding: 2rem;
 }
 
 @media screen and (max-width: 768px) {
