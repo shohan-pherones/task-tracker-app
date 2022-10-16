@@ -1,30 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 
 const App = () => {
   const [showForm, setShowForm] = useState(false);
-  const [tasks, setTasks] = useState([
-    {
-      id: 1,
-      text: "Web development class",
-      day: new Date(2022, 9, 16, 10),
-      reminder: false,
-    },
-    {
-      id: 2,
-      text: "Job preparation class",
-      day: new Date(2022, 9, 16, 12),
-      reminder: false,
-    },
-    {
-      id: 3,
-      text: "React.js drone project",
-      day: new Date(2022, 9, 17, 10, 30),
-      reminder: false,
-    },
-  ]);
+  const [tasks, setTasks] = useState([]);
+
+  useEffect(() => {
+    const getTasks = async () => {
+      const tasksFromServer = await fetchTasks();
+      setTasks(tasksFromServer);
+    };
+
+    getTasks();
+  }, []);
+
+  // Fetch tasks
+  const fetchTasks = async () => {
+    const res = await fetch("http://localhost:3000/tasks");
+    const data = await res.json();
+
+    return data;
+  };
 
   // Add task
   const addTask = ({ day, ...others }) => {

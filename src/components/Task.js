@@ -14,7 +14,7 @@ const Task = ({ task, onDelete, onToggle }) => {
         />
       </h3>
       <p className="task-day">
-        {task.day.toLocaleString("en-US", {
+        {new Date(task.day).toLocaleString("en-US", {
           year: "numeric",
           month: "short",
           day: "2-digit",

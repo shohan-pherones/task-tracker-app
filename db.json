@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Web development class",
+      "day": "2022-10-20T04:30:00.000Z",
+      "reminder": false
+    },
+    {
+      "id": 2,
+      "text": "Job preparation class",
+      "day": "2022-10-22T04:30:00.000Z",
+      "reminder": false
+    },
+    {
+      "id": 3,
+      "text": "React.js drone project",
+      "day": "2022-10-25T04:45:00.000Z",
+      "reminder": false
+    }
+  ]
+}

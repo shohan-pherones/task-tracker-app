@@ -54,13 +54,14 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-dark);
-  color: var(--color-light);
+  background-color: var(--color-light);
+  color: var(--color-dark);
 }
 
 .wrapper {
+  min-height: 60vh;
   max-width: 60vw;
-  margin: 10% auto;
+  margin: 10rem auto;
   padding: 2rem;
   background-color: var(--color-dark);
   border-radius: 5px;
@@ -191,5 +192,6 @@ input[type="checkbox"] {
 
   .wrapper {
     max-width: 95vw;
+    margin: 5rem auto;
   }
 }
