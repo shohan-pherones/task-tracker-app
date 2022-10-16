@@ -13,7 +13,15 @@ const Task = ({ task, onDelete, onToggle }) => {
           onClick={() => onDelete(task.id)}
         />
       </h3>
-      <p className="task-day">{task.day}</p>
+      <p className="task-day">
+        {task.day.toLocaleString("en-US", {
+          year: "numeric",
+          month: "short",
+          day: "2-digit",
+          hour: "2-digit",
+          minute: "2-digit",
+        })}
+      </p>
     </div>
   );
 };

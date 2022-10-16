@@ -39,6 +39,25 @@ body {
   color: var(--color-light);
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10%;
+  border-radius: 10px;
+  background-color: var(--color-dark);
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::selection {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
 .wrapper {
   max-width: 60vw;
   margin: 10% auto;
@@ -77,6 +96,56 @@ h1 {
   background-color: var(--color-light) !important;
 }
 
+.form {
+  background-color: var(--color-primary);
+  color: var(--color-dark);
+  font-weight: 600;
+  border-radius: 2px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2px;
+}
+
+input[type="checkbox"] {
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+.form-checkbox {
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+
+.btn-submit {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+}
+
+.btn-submit:hover {
+  color: var(--color-dark);
+}
+
 .tasks {
   display: flex;
   flex-direction: column;
@@ -85,7 +154,7 @@ h1 {
 
 .task {
   background-color: #333;
-  padding: 1rem 2rem;
+  padding: 2rem;
   border-radius: 2px;
   cursor: pointer;
 }
